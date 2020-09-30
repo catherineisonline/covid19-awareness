@@ -211,7 +211,7 @@ nav ul.nav-ul > li a {
 
 .third-section {
     width: 100%;
-    background-image: url('../Covid/images/section-3.png');
+    background-image: url('https://user-images.githubusercontent.com/63928803/94612382-16833b00-02b4-11eb-8e23-86c3955439f5.png');
     background-size: cover;  
     max-width: 100%;
     position: relative;
@@ -337,7 +337,7 @@ nav ul.nav-ul > li a {
 
 .section-image {
     overflow: hidden;
-    background:  url('images/section-4.jpg') center center no-repeat;
+    background:  url('https://user-images.githubusercontent.com/63928803/94612383-171bd180-02b4-11eb-897b-e653348f0978.jpg') center center no-repeat;
     background-size: cover;
 
 }
