@@ -12,7 +12,6 @@
   integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymou+++++s" />
 
 <body>
-
   <!-- Header -->
   <header>
     <!-- Navigation -->
@@ -35,6 +34,7 @@
     <div class="main-title">
       <h1>COVID-19 CORONAVIRUS PANDEMIC</h1>
     </div>
+    <!-- Stats Block -->
     <div class="stat-block">
       <div class="info-table">
         <span class="info-icon"><i class="fas fa-lungs-virus" aria-hidden="true"></i></span>
@@ -203,59 +203,6 @@
       </div>
     </div>
   </div>
-
-  <script src="../Covid/javascript.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script>
-    // COVID API
-    $(document).ready(function () {
-      init();
-
-      function init() {
-        var url = "https://api.covid19api.com/summary";
-
-        var data = "";
-
-        $.get(url, function (data) {
-          console.log(data.Global);
-
-          data = `
-                 <p>${data.Global.TotalConfirmed}</p>
-`;
-          $("#data").html(data);
-        });
-
-        var recovered = "";
-
-        $.get(url, function (recovered) {
-          console.log(data.Global);
-
-          recovered = `
-                 <p>${recovered.Global.TotalRecovered}</p>
-                
-`;
-          $("#recovered").html(recovered);
-        });
-
-        var deaths = "";
-
-        $.get(url, function (deaths) {
-          console.log(data.Global);
-
-          deaths = `
-                 <p>${deaths.Global.TotalDeaths}</p>
-                
-`;
-          $("#deaths").html(deaths);
-        });
-      }
-    });
-
-      // END OF COVID API
-  </script>
-</body>
 <!-- FOOTER -->
 <footer>
   <div class="footer-div">
@@ -283,5 +230,12 @@
     you have read on this website.
   </p>
 </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+
+</body>
+
 
 </html>
