@@ -388,6 +388,8 @@ footer {
   line-height: 3rem;
 }
 
+
+
 .credit a,
 .useful-links a {
   cursor: pointer;
@@ -439,7 +441,7 @@ footer {
     text-decoration: overline;
     transition: all ease-in-out 0.3s;
   }
-  .useful-links a:hover {
+  .useful-links a:hover, .credit a:hover {
     text-decoration: underline var(--light-green) 5px;
     transition: all ease 0.3s;
   }
