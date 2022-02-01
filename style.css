@@ -121,6 +121,7 @@ h1 {
   padding: 5rem;
 }
 
+
 .info-table {
   border-radius: 15px;
   padding: 2rem;
@@ -130,6 +131,9 @@ h1 {
   font-weight: 600;
   flex-basis: 50%;
   transition: all ease-in-out 0.3s;
+  box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
 }
 
 .info-icon {
@@ -174,10 +178,13 @@ h1 {
   text-align: center;
 }
 .column-2-media img {
-  width: 70%;
+  max-width: 70%;
   border-radius: 20px;
   opacity: 0.9;
-  border: 5px solid rgba(255, 255, 255, 0.623);
+  border: 3px solid rgba(255, 255, 255, 0.623);
+  box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
 }
 /***** LEARN MORE BUTTON EFFECTS *****/
 
@@ -251,7 +258,6 @@ h1 {
 }
 
 .symptoms-grid {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -268,6 +274,7 @@ h1 {
   transition: all ease-in-out 0.3s;
   border-radius: 20px;
   padding: 1.5rem;
+  
 }
 .symptoms-info li {
   list-style: none;
@@ -289,89 +296,95 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .tips-grid {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 890px;
-  max-width: 100%;
-  padding: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 50%;
+  padding: 5rem;
   color: var(--white);
+  margin: 0 auto;
+  
 }
 
 .tips-grid h4 {
-  font-size: 10px;
+  font-size: 1.5rem;
   color: var(--white);
   font-weight: 600;
 }
 
 .tips-grid p {
-  line-height: 23px;
+  line-height: 2rem;
   font-weight: 400;
-  padding-right: 90px;
-  padding-left: 90px;
-  text-align: start;
 }
 
-/******* FOURTH SECTION *******/
+/** FIFTH SECTION **/
 
-.fourth-section-test {
-  display: inline-grid;
+.fifth-section {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  grid-gap: 20px;
-  max-width: 960px;
-  padding: 60px;
-  height: 450px;
+  grid-template-rows: auto;
+  width: 80%;
+  grid-gap: 2rem;
+  margin: 0 auto;
+ margin-top: 5rem;
+ padding: 2rem;
 }
 
 .section-image {
-  overflow: hidden;
-  background: url("https://user-images.githubusercontent.com/63928803/94612383-171bd180-02b4-11eb-897b-e653348f0978.jpg")
-    center center no-repeat;
+  background-image: url("https://user-images.githubusercontent.com/63928803/94612383-171bd180-02b4-11eb-897b-e653348f0978.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-}
-
-.section-image img {
-  width: 100%;
   max-width: 100%;
+  border-radius: 10px 55px 55px 10px;
+  box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
 }
 
 .info-container {
-  background: linear-gradient(to right, #1d86df 0%, #39b49a 100%);
+  background-color: var(--light-blue);  
+  backdrop-filter: blur(20px);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 55px 10px 10px 55px;
+  box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
 }
 
 .info-container h3 {
-  background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
-  border: 1px solid #fff;
-  color: var(--white);
   font-size: 1.5rem;
   font-weight: 600;
   padding: 10px;
 }
 .info-container p {
-  color: var(--white);
   padding: 15px;
   text-align: justify;
 }
 
 /****** FOOTER ******/
 
-footer {
-  background: var(--blue);
-}
 
-.footer-div {
+
+footer {
+  position: absolute;
+  background: var(--blue);
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  max-width: 100%;
+  height: 5rem;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   color: var(--white);
   padding: 10px;
+  margin-bottom: 0;
 }
 
 .credit {
@@ -410,6 +423,9 @@ footer {
     background-color: var(--light-blue);
     transition: all ease-in-out 0.3s;
     cursor: pointer;
+    box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-webkit-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+-moz-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
   }
   .symptoms-info:hover h4 {
     text-decoration: overline;
