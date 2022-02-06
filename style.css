@@ -11,10 +11,10 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   font-family: var(--body-font);
 }
 
@@ -55,7 +55,7 @@ nav ul.nav-ul > li a.active {
 
 nav ul.nav-ul > li a {
   color: var(--white);
-  font-size: 17px;
+  font-size: 1rem;
   padding: 20px 20px;
   text-transform: none;
   letter-spacing: 0;
@@ -99,6 +99,7 @@ h1 {
   gap: 5rem;
   justify-content: center;
   padding: 4rem;
+  margin: 0 auto;
 }
 
 .info-table {
@@ -136,13 +137,13 @@ h1 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 17px;
+  font-size: 1rem;
   color: var(--blue);
   text-align: center;
 }
 
 .titles h2 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 62px;
   text-align: center;
@@ -245,7 +246,7 @@ h1 {
   gap: 2rem;
   text-align: start;
   padding: 2rem;
-  width: 80%;
+  min-width: 80%;
   margin: 0 auto;
 }
 
@@ -396,7 +397,7 @@ footer {
 }
 
 .disclaimer {
-  font-size: 10px;
+  font-size: 0.6rem;
 }
 /** Responsive Hover **/
 
