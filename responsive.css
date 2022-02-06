@@ -1,3 +1,18 @@
+/****** HAMBURGER MENU GENERAL ******/
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
 /****** HAMBURGER MENU ******/
 
 @media (max-width: 767px) {
