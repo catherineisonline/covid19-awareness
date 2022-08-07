@@ -10,7 +10,7 @@ const coviidAPI = function () {
     fetch(url)
       .then((response) => response.json())
       .then((reponse) => {
-        console.log(reponse);
+        // console.log(reponse);
         //  Retrieving object
         let mydata = reponse[0];
         //Retrieving key values
